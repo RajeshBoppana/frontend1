@@ -30,12 +30,38 @@
             </div>
 
             <div class="button_div">
-                <button onclick="">Addition (X + Y)</button>
-                <button onclick="">Subtraction (X - Y)</button>
-                <button onclick="">Multiplication (X * Y)</button>
-                <button onclick="">Division (X / Y)</button>
+                <button onclick="add();">Addition (X + Y)</button>
+                <button onclick="subt();">Subtraction (X - Y)</button>
+                <button onclick="multiply();">Multiplication (X * Y)</button>
+                <button onclick="divs();">Division (X / Y)</button>
             </div>            
         </div>
+        <script>
+            function add(){
+                x= parseInt(document.getElementById("num1").value);
+                y= parseInt(document.getElementById("num2").value);
+                result = x+y;
+                document.getElementById("res").value = result;
+            }
+            function multiply(){
+                x= parseInt(document.getElementById("num1").value);
+                y= parseInt(document.getElementById("num2").value);
+                result = x*y;
+                document.getElementById("res").value = result;
+            }
+            function subt(){
+                x= parseInt(document.getElementById("num1").value);
+                y= parseInt(document.getElementById("num2").value);
+                result = x-y;
+                document.getElementById("res").value = result;
+            }
+            function divs(){
+                x= parseInt(document.getElementById("num1").value);
+                y= parseInt(document.getElementById("num2").value);
+                result = x/y;
+                document.getElementById("res").value = result;
+            }
+        </script>
 
     </body>
 </html>
